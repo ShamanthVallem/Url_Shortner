@@ -1,5 +1,5 @@
 This is a url shortner, it can be used to Shorten the lengthy Url's.
-Follow these ionstructions to run this file:
+Follow these instructions to run this file:
 1) Clone this repository into your local machine using "git clone "URL"
 2) Navigate to the project directory using cmd
 3) Run the following command to install required libraries:
