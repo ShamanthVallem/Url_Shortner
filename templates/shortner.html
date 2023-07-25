@@ -8,10 +8,17 @@
     <title>Url-Shortner</title>
 </head>
 <body>
-    <!-- Hey -->
-    <p>MainURL: </p>
-    <p><a href="{{ mainUrl }}" target="_blank">{{ mainUrl }}</a></p>
-    <p>Here is your Shortened URL:</p>
-    <p><a href="{{ short_url }}" target="_blank">{{ short_url }}</a></p>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center p-3" style="height: 70vh; " >
+    <div class="col-lg-8 col-md-10 col-sm-12 bg-light d-flex flex-column justify-content-center p-3 align-items-center border border-secondary rounded  overflow-auto" style="height: 50vh;">
+    
+    <p class="">MainURL: 
+    <a href="{{ mainUrl }}" target="_blank"> {{ mainUrl }}</a></p><br>
+    <p>Here is your Shortened URL:
+    <a href="{{ short_url }}" target="_blank"> {{ short_url }}</a></p>
+
+    </div>
+    </div>
+    
 </body>
 </html>

@@ -5,6 +5,7 @@ import database
 app = Flask(__name__)
 database.create_table()
 
+serverAddress = 'localhost:5000'
 
 @app.route("/")
 def home():
@@ -15,7 +16,7 @@ def url_shortner():
     mainUrl=request.form["mainUrl"]
     token_key = shortuuid.uuid()
     database.insert_url(mainUrl, token_key)
-    short_url = f'http://localhost:5000/{token_key}'
+    short_url = f'http://{serverAddress}/{token_key}'
     return render_template("shortner.html",  mainUrl=mainUrl, short_url = short_url)
 
 
